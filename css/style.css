@@ -1,0 +1,37 @@
+@font-face
+{
+    font-family: Font Name;
+    src: url(../fonts/);
+}
+* 
+{
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/*Font Styling*/
+h1, h2, h3, h4, h5, h6, p, a
+{
+    font-family: Font Name, sans-serif;
+    font-style: normal;
+}
+
+/*-----------------
+   RESPONSIVNESS
+-----------------*/
+
+/*Responsive Navigation*/
+@media (max-width: 000px)
+{
+}
