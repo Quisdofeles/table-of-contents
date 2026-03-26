@@ -83,45 +83,170 @@ p
 }
 
 /*Header*/
-
-/*Footer*/
-.footer-overlay
+.header
 {
-    background: linear-gradient(to top, #000000BF 0%, #00000000 100%);
-    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 8888;
+}
+.header-top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: #FFFFFF;
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 0rem;
+    border-bottom: solid 2px #000000;
+}
+#header-logo
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+}
+#header-logo:hover
+{
+    text-decoration: underline;
+}
+.header-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+.header-links a
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+}
+.header-links a:hover
+{
+    text-decoration: underline;
+}
+.tags
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 3rem;
+    background-color: #FFFFFF;
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+#tags-list
+{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+}
+#tags-list li 
+{
+    display: flex;
+    align-items: center;
+}
+#tags-list li a 
+{
+    color: #000000;
+    text-decoration: none;
+    font-family: Degular-Mono-Semibold, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+#tags-list li a:hover 
+{
+    text-decoration: underline;
+}
+#tags-list li:not(:last-child)::after 
+{
+    content: "•";
+    margin-left: 0.5rem;
+}
+.header-overlay 
+{
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #00000080 0%, #00000000 100%);
     z-index: 9999;
 }
-.footer
+
+/*Content*/
+#content 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3000px;
+    width: 100%;
+    background-repeat: repeat; 
+    background-size: auto;
+}
+
+/*Footer*/
+.footer 
+{
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.footer-overlay 
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(to top, #00000080 0%, #00000000 100%);
+    pointer-events: none;
+    z-index: 9999;
+}
+.footer-bottom 
 {
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0rem 2rem 0rem 2rem;
 }
-.footer h2
+.footer-bottom h2, 
+.footer-bottom a 
 {
     font-family: D-Din-Bold, sans-serif;
-    font-style: normal;
-    color: #000000;
     font-size: 1.2rem;
+    color: #000000;
+    margin: 0;
 }
-.footer a
+.footer-bottom a 
 {
-    font-family: D-Din-Bold, sans-serif;
-    font-style: normal;
     text-decoration: underline;
-    color: #000000;
-    font-size: 1.2rem;
 }
-.footer a:hover 
+.footer-bottom a:hover 
 {
-    font-size: 1.2rem;
     color: transparent;
     -webkit-text-stroke: 1px #DD1212;
-    -moz-text-stroke: 1px #DD1212;
 }
 
 /*-----------------
@@ -134,7 +259,7 @@ p
 }
 
 /*Responsive Footer*/
-@media (max-width: 800px)
+@media (max-width: 820px)
 {
     .footer h2
     {
@@ -149,7 +274,7 @@ p
         font-size: 1rem;
     }
 }
-@media (max-width: 675px)
+@media (max-width: 700px)
 {
     .footer h2
     {
@@ -169,12 +294,13 @@ p
         -moz-text-stroke: 0.75px #DD1212;
     }
 }
-@media (max-width: 550px)
+@media (max-width: 575px)
 {
-    .footer 
+    .footer-bottom
     {
         flex-direction: column;
-        height: auto;
+        height: 5rem;
         align-items: center;
+        padding: 1rem 0rem 1rem 0rem;
     }
 }
