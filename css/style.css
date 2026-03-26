@@ -1,7 +1,32 @@
 @font-face
 {
-    font-family: Font Name;
-    src: url(../fonts/);
+    font-family: Degular-Display-Bold;
+    src: url(../fonts/DegularDisplayDemo-Bold.otf);
+}
+@font-face
+{
+    font-family: Degular-Display-Semibold;
+    src: url(../fonts/DegularDisplayDemo-Semibold.otf);
+}
+@font-face
+{
+    font-family: Degular-Mono-Bold;
+    src: url(../fonts/DegularMonoDemo-Bold.otf);
+}
+@font-face
+{
+    font-family: Degular-Mono-Semibold;
+    src: url(../fonts/DegularMonoDemo-Semibold.otf);
+}
+@font-face
+{
+    font-family: Degular-Text-Bold;
+    src: url(../fonts/DegularTextDemo-Bold.otf);
+}
+@font-face
+{
+    font-family: Degular-Text-Semibold;
+    src: url(../fonts/DegularTextDemo-Semibold.otf);
 }
 @font-face
 {
@@ -26,23 +51,55 @@ body
 }
 
 /*Font Styling*/
-h1, h2, h3, h4, h5, h6, p, a
+h1
 {
-    font-family: Font Name, sans-serif;
+    font-family: Degular-Display-Bold, sans-serif;
+    font-style: normal;
+}
+h2
+{
+    font-family: Degular-Display-Semibold, sans-serif;
+    font-style: normal;
+}
+h3
+{
+    font-family: Degular-Text-Bold, sans-serif;
+    font-style: normal;
+}
+h4
+{
+    font-family: Degular-Mono-Semibold, sans-serif;
+    font-style: normal;
+}
+a
+{
+    font-family: Degular-Display-Bold, sans-serif;
+    font-style: normal;
+}
+p
+{
+    font-family: Degular-Text-Semibold, sans-serif;
     font-style: normal;
 }
 
 /*Header*/
 
 /*Footer*/
+.footer-overlay
+{
+    background: linear-gradient(to top, #000000BF 0%, #00000000 100%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 3rem;
+    z-index: 9999;
+}
 .footer
 {
-    height: 50px;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem 1rem 1rem;
-    border-top: 2px solid #000000; 
 }
 .footer h2
 {
