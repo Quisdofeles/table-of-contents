@@ -3,6 +3,11 @@
     font-family: Font Name;
     src: url(../fonts/);
 }
+@font-face
+{
+    font-family: D-Din-Bold;
+    src: url(../fonts/D-DIN-Bold.otf);
+}
 * 
 {
     box-sizing: border-box;
@@ -29,6 +34,39 @@ h1, h2, h3, h4, h5, h6, p, a
 
 /*Header*/
 
+/*Footer*/
+.footer
+{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+    border-top: 2px solid #000000; 
+}
+.footer h2
+{
+    font-family: D-Din-Bold, sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-size: 1.2rem;
+}
+.footer a
+{
+    font-family: D-Din-Bold, sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 1.2rem;
+}
+.footer a:hover 
+{
+    font-size: 1.2rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #DD1212;
+    -moz-text-stroke: 1px #DD1212;
+}
+
 /*-----------------
    RESPONSIVNESS
 -----------------*/
@@ -36,4 +74,50 @@ h1, h2, h3, h4, h5, h6, p, a
 /*Responsive Navigation*/
 @media (max-width: 000px)
 {
+}
+
+/*Responsive Footer*/
+@media (max-width: 800px)
+{
+    .footer h2
+    {
+        font-size: 1rem;
+    }
+    .footer a
+    {
+        font-size: 1rem;
+    }
+    .footer a:hover
+    {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 675px)
+{
+    .footer h2
+    {
+        font-size: 0.8rem;
+    }
+    .footer a
+    {
+        font-size: 0.8rem;
+    }
+    .footer a:hover
+    {
+        font-size: 0.8rem;
+    }
+    .footer a:hover
+    {
+        -webkit-text-stroke: 0.75px #DD1212;
+        -moz-text-stroke: 0.75px #DD1212;
+    }
+}
+@media (max-width: 550px)
+{
+    .footer 
+    {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
 }
