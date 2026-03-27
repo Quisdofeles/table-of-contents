@@ -205,6 +205,12 @@ p
     background-size: auto;
 }
 
+/*TEST PLEASE DELETE LATER*/
+#hero
+{
+    height: 1000px;
+}
+
 /*Footer*/
 .footer 
 {
