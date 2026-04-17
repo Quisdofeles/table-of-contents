@@ -208,8 +208,9 @@ ul, ol
     align-items: center;
     min-height: 100vh;
     padding: 5rem 0;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top left;
 }
 .recipe-card 
 {
@@ -244,6 +245,30 @@ ul, ol
     background: #ffffff;
     box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
     padding: 2rem;
+}
+.recipe-review 
+{
+    display: flex;
+    align-items: center;
+}
+.star-rating-box 
+{
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.stars-filled 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
 }
 .recipe-details-top 
 {
@@ -375,14 +400,8 @@ li
         width: auto;
     }
 }
-@media (max-width: 475px) 
+@media (max-width: 600px) 
 {
-    #header-logo 
-    {
-        display: block;
-        max-width: min-content;
-        line-height: 0.8;
-    }
     .tags 
     {
         height: auto;
@@ -399,6 +418,38 @@ li
     .header-overlay 
     {
         top: 100%; 
+    }
+}
+@media (max-width: 475px) 
+{
+    #header-logo 
+    {
+        display: block;
+        max-width: min-content;
+        line-height: 0.8;
+    }
+}
+
+/*Responsive Background Image*/
+@media (max-width: 1100px) 
+{
+    .content 
+    {
+        background-size: 150% auto; /* Slight zoom for tablets */
+    }
+}
+@media (max-width: 600px) 
+{
+    .content 
+    {
+        background-size: 200% auto; /* Heavy zoom for phones */
+    }
+}
+@media (max-width: 400px) 
+{
+    .content 
+    {
+        background-size: 250% auto; /* Heavy zoom for phones */
     }
 }
 

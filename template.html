@@ -22,59 +22,53 @@
             <div class="tags">
                 <ul id="tags-list">
                     <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
-                    <li><a href="recipes.html">Tag</a></li>
                 </ul>
             </div>
             <div class="header-overlay"></div>
         </div>
 
         <!--Content-->
-        <div class="content" style="background-image: url('images/TemplateBackgroundImage.webp');">
+        <div class="content" id="recipe-page-bg" style="background-image: url('images/TemplateBackgroundImage.webp');">
             <div class="recipe-card">
                 <div class="left-side-card">
                     <div class="recipe-title">
-                        <h1>Title</h1>
+                        <h1 id="recipe-title">Title</h1>
                     </div>
+
                     <div class="recipe-review">
-                        <h1>★★★⯪☆</h1>
+                        <div class="star-rating-box">
+                            <div class="stars-empty">☆☆☆☆☆</div>
+                            <div class="stars-filled" id="star-fill-level" style="width: 0%;">★★★★★</div>
+                        </div>
                     </div>
+
                     <div class="recipe-details-top">
                         <div class="recipe-details">
                             <img id="recipe-servings" src="images/Serves-Icon.webp" alt="Servings Icon">
-                            <h4>X/Ser</h4>
+                            <h4 id="stat-servings">X/Ser</h4>
+
                             <img id="recipe-time" src="images/Clock-Icon.webp" alt="Clock Icon">
-                            <h4>X/HR</h4>
+                            <h4 id="stat-time">X/HR</h4>
                         </div>
                         <div class="recipe-details-bot">
                             <img id="recipe-calories" src="images/Calories-Icon.webp" alt="Calories Icon">
-                            <h4>XXX Cal/Ser</h4>
+                            <h4 id="stat-calories">XXX Cal/Ser</h4>
+
                             <img id="recipe-difficulty" src="images/Easy-Icon.webp" alt="Difficulty Icon">
-                            <h4>Difficulty</h4></div>
+                            <h4 id="stat-difficulty">Difficulty</h4></div>
                         </div>
+
                     <div class="recipe-ingredients">
                         <h1>Ingredients</h1>
-                        <h3>Sub Title:</h3>
-                        <ul>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                        </ul>
+                        <div id="ingredients-list">
+                        </div>
                     </div>
                 </div>
                 <div class="right-side-card">
                     <div class="recipe-instructions">
                         <h1>Instructions</h1>
-                        <h3>Sub Title:</h3>
-                        <ol>
-                            <li>This is paragraph text to represent a very long list item.</li>
-                            <li>This is paragraph text to represent a very long list item.</li>
-                            <li>This is paragraph text to represent a very long list item.</li>
-                        </ol>
+                        <div id="instructions-list">
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -90,6 +84,6 @@
         </div>
 
         <!--Java Scripts--> 
-
+        <script src="mechanics.js"></script>
     </body>
 </html>
