@@ -406,14 +406,18 @@ li
     {
         height: auto;
         min-height: 3rem;
+        padding: 0.5rem 2rem 0rem 2rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
     #tags-list 
     {
         flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 0rem 0.5rem;
     }
     #tags-list li a 
     {
-        line-height: 1;
+        line-height: 0.75;
     }
     .header-overlay 
     {
@@ -491,7 +495,7 @@ li
 {
     .recipe-card 
     {
-        width: 22.5rem;
+        width: 23.5rem;
     }
     .left-side-card, .right-side-card 
     {
@@ -501,11 +505,11 @@ li
     }
     .left-side-card 
     { 
-        width: 22.5rem; 
+        width: 23.5rem; 
     }
     .right-side-card 
     { 
-        width: 22.5rem;
+        width: 23.5rem;
     }
     .recipe-details-top 
     {
@@ -538,6 +542,21 @@ li
 {
     .recipe-card 
     {
+        width: 22rem;
+    }
+    .left-side-card 
+    { 
+        width: 22rem; 
+    }
+    .right-side-card 
+    { 
+        width: 22rem;
+    }
+}
+@media (max-width: 450px) 
+{
+    .recipe-card 
+    {
         width: 20rem;
     }
     .left-side-card 
@@ -549,34 +568,19 @@ li
         width: 20rem;
     }
 }
-@media (max-width: 450px) 
-{
-    .recipe-card 
-    {
-        width: 17.5rem;
-    }
-    .left-side-card 
-    { 
-        width: 17.5rem; 
-    }
-    .right-side-card 
-    { 
-        width: 17.5rem;
-    }
-}
 @media (max-width: 400px) 
 {
     .recipe-card 
     {
-        width: 15rem;
+        width: 17rem;
     }
     .left-side-card 
     { 
-        width: 15rem; 
+        width: 17rem; 
     }
     .right-side-card 
     { 
-        width: 15rem;
+        width: 17rem;
     }
 }
 
@@ -616,7 +620,7 @@ li
         -moz-text-stroke: 0.75px #DD1212;
     }
 }
-@media (max-width: 575px)
+@media (max-width: 600px)
 {
     .footer-bottom
     {
