@@ -19,23 +19,31 @@
                     <a href="recipes.html">Recipes</a>
                 </div>
             </div>
+            <div class="filters">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <div class="sort-btn">
+                    <button class="active" onclick="renderRecipes('alphabetical', this)">A-Z</button>
+                    <button onclick="renderRecipes('tags', this)">Tags</button>
+                    <button onclick="renderRecipes('rating', this)">Rating</button>
+                </div>
+            </div>
             <div class="header-overlay"></div>
         </div>
 
-        <!--Hero Section-->
-        <div id="hero">
+        <!--Content-->
+        <div class="recipe-index">
         </div>
 
         <!--Footer-->
         <div class="footer">
             <div class="footer-overlay"></div>
             <div class="footer-bottom">
-                <h2>©2025 TABLE OF CONTENTS • ALL RIGHTS RESERVED</h2>
+                <h2>©2026 TABLE OF CONTENTS • ALL RIGHTS RESERVED</h2>
                 <h2>POWERED BY <a href="https://robertbookdesign.com" target="_blank" rel="noopener noreferrer">ROBERT BOOK DESIGN</a></h2>
             </div>
         </div>
 
         <!--Java Scripts--> 
-
+        <script src="mechanics.js"></script>
     </body>
 </html>

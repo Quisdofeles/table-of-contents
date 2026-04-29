@@ -69,4 +69,20 @@ async function loadRecipe() {
 }
 
 // Run the engine
-loadRecipe();
+if (document.getElementById('recipe-title')) 
+{
+    loadRecipe();
+}
+
+function renderRecipes(sortType, clickedButton) {
+    // 1. Remove 'active' class from all buttons in the sort container
+    const buttons = document.querySelectorAll('.sort-btn button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // 2. Add 'active' class to the button that was clicked
+    clickedButton.classList.add('active');
+
+    // 3. Trigger your sorting logic here
+    console.log("Sorting recipes by:", sortType);
+    // [Insert your logic to sort/render the list here]
+}
