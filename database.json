@@ -1,5 +1,6 @@
 {
-  "recipes": [
+  "recipes": 
+  [
     {
       "id": "tomato-basil-soup",
       "title": "Tomato Basil Soup",
@@ -13,13 +14,14 @@
         "Easy",
         "Stove Top",
         "Vegetable", 
-        "Bread"
+        "Bread",
+        "American"
       ],
       "stats": 
       {
-        "servings": "4 Servings",
+        "servings": "8 Servings",
         "time": "70 Min",
-        "calories": "942 Cal/Ser",
+        "calories": "471 Cal/Ser",
         "difficulty": "Easy",
         "difficultyIcon": "images/Easy-Icon.webp"
       },
@@ -57,7 +59,7 @@
       "instructions": 
       [
         {
-          "section": "Preparation",
+          "section": "Soup",
           "steps": 
           [
             "In a large saucepan over medium heat, melt butter. Add onion and carrots; season with salt and pepper. Cover and cook, stirring occasionally, until vegetables are softened, 7 to 8 minutes.", 
@@ -66,13 +68,140 @@
           ]
         },
         {
-          "section": "Serving",
+          "section": "Crostini",
           "steps": 
           [
             "Arrange a rack in center of oven; preheat to 400°. In a small bowl, mash butter and 1/4 cup Parmesan with a fork; season with pepper.", 
             "Spread some Parmesan butter on one side of each baguette slice, then transfer buttered side up to a parchment-lined baking sheet. Sprinkle with remaining 1/4 cup Parmesan.",
             "Toast crostini until edges are browned and cheese is melted, about 10 minutes.", 
             "Ladle soup into bowls. Top with basil. Serve with crostini alongside." 
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "stuffed-pepper-soup",
+      "title": "Stuffed Pepper Soup",
+      "bgImage": "images/StuffedPepperSoup.webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Main", 
+        "Soup",
+        "Winter",
+        "Easy",
+        "Stove Top",
+        "Vegetable",
+        "American"
+      ],
+      "stats": 
+      {
+        "servings": "8 Servings",
+        "time": "75 Min",
+        "calories": "276 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Soup",
+          "items": 
+          [
+            "1 pound ground beef", 
+            "1 quart water", 
+            "2 quarts vegetable juice", 
+            "3 medium sweet red or green peppers, diced",
+            "1 cup uncooked long grain rice",
+            "1 celery rib, diced", 
+            "1 large onion, diced", 
+            "3 chiken bouillon cubes", 
+            "2 garlic cloves, minced",
+            "1/2 teaspoon salt"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Soup",
+          "steps": 
+          [
+            "In a large kettle or Dutch oven over medium heat, cook beef until no longer pink; drain.",
+            "add the remaining ingredients; bring to a boil.",
+            "Reduce heat; simmer uncovered for 1 hour or until rice is tender."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "taco-salad",
+      "title": "Taco Salad",
+      "bgImage": "images/TacoSalad.webp",
+      "rating": 5,
+      "tags": 
+      [
+        "Main", 
+        "Casserole",
+        "Medium",
+        "Oven",
+        "Mexican"
+      ],
+      "stats": 
+      {
+        "servings": "6 Servings",
+        "time": "45 Min",
+        "calories": "725 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Soup",
+          "items": 
+          [
+            "1 pound ground beef", 
+            "1 cup canned corn", 
+            "1 cup salsa", 
+            "1/2 cup mayonnaise",
+            "1 1/2 cup rice",
+            "2 tbsp chili powder", 
+            "2 cups crushed tortilla chips", 
+            "1 cup (4 ounces) shredded Colby cheese", 
+            "1 cup (4 ounces) shredded Monderey Jack cheese"
+          ]
+        },
+        {
+          "section": "Salad",
+          "items": 
+          [
+            "1 medium tomato; chopped", 
+            "1 medium cucumber; chopped",
+            "2 cups shredded lettuce"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Casserole",
+          "steps": 
+          [
+            "In a saucepan, brown beef; drain.",
+            "Add salsa, mayonnaise and chili powder; mix well.",
+            "In an ungreased 2-qt. baking dish, layer in half of the meat mixture, chips and cheeses.",
+            "Repeat layers.",
+            "Bake, uncovered, at 350° for 20-25 minutes, or until heated through."
+          ]
+        },
+        {
+          "section": "Salad",
+          "steps": 
+          [
+            "Just before serving, top with chopped tomato, cucumbers, and lettuce."
           ]
         }
       ]
