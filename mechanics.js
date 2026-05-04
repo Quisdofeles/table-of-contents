@@ -1,3 +1,6 @@
+//---------------------------
+//  TEMPLATE RECIPE LOADER
+//---------------------------
 async function loadRecipe() {
     try {
         // 1. Fetch the database file
@@ -74,6 +77,68 @@ if (document.getElementById('recipe-title'))
     loadRecipe();
 }
 
+//------------------------
+//  RECIPE INDEX LOADER
+//------------------------
+
+async function loadRecipeIndex() {
+    const container = document.getElementById('recipe-list');
+    if (!container) return; // Guard clause to prevent errors on other pages
+
+    try {
+        const response = await fetch('database.json');
+        const data = await response.json();
+        
+        // 1. Sort Alphabetically
+        const sortedRecipes = data.recipes.sort((a, b) => a.title.localeCompare(b.title));
+
+        let currentLetter = "";
+        let htmlContent = "";
+
+        // 2. Build the HTML string
+        sortedRecipes.forEach(recipe => {
+            const firstLetter = recipe.title.charAt(0).toUpperCase();
+
+            // Inject the Letter Header if it's a new starting letter
+            if (firstLetter !== currentLetter) {
+                currentLetter = firstLetter;
+                htmlContent += `<h2 class="index-letter">${currentLetter}</h2>`;
+            }
+
+            const percentage = (recipe.rating / 5) * 100;
+
+            // 2. Build the Tile string
+            htmlContent += `
+                <a href="template.html?id=${recipe.id}" class="recipe-tile">
+                    <div class="tile-bg" style="background-image: url('${recipe.bgImage}')"></div>
+                    <div class="tile-info">
+                        <h3>${recipe.title}</h3>
+                        <div class="rating-container">
+                            <div class="star-rating-wrapper">
+                                <div class="stars-empty">☆☆☆☆☆</div>
+                                <div class="stars-full" style="width: ${percentage}%">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            `;
+        });
+
+        // 3. Dump it all into the DOM at once for better performance
+        container.innerHTML = htmlContent;
+
+    } catch (error) {
+        console.error("Error loading the recipe database:", error);
+        container.innerHTML = "<p>Failed to load recipes. Check console for details.</p>";
+    }
+}
+
+// Fire the engine when the DOM is ready
+document.addEventListener('DOMContentLoaded', loadRecipeIndex);
+
+//-------------------------------
+//  RECIPE INDEX FILTER BUTTONS
+//-------------------------------
 function renderRecipes(sortType, clickedButton) {
     // 1. Remove 'active' class from all buttons in the sort container
     const buttons = document.querySelectorAll('.sort-btn button');
