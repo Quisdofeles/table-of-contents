@@ -1,6 +1,7 @@
 //---------------------------
 //  TEMPLATE RECIPE LOADER
 //---------------------------
+
 async function loadRecipe() {
     try {
         // 1. Fetch the database file
@@ -78,10 +79,10 @@ if (document.getElementById('recipe-title'))
 }
 
 //------------------------
-//  RECIPE INDEX LOADER
+//   RECIPE INDEX LOADER
 //------------------------
 
-let allRecipes = []; // Global storage so we don't fetch JSON every time we click a button
+let allRecipes = []; // Global storage to prevent redundant fetching
 
 async function loadRecipeIndex() {
     const container = document.getElementById('recipe-list');
@@ -92,7 +93,17 @@ async function loadRecipeIndex() {
         const data = await response.json();
         allRecipes = data.recipes;
         
-        // Default startup: Alphabetical
+        // Initial setup for the search bar listener
+        const searchBar = document.getElementById('search-bar');
+        if (searchBar) {
+            searchBar.addEventListener('input', () => {
+                const activeBtn = document.querySelector('.sort-btn button.active');
+                const mode = activeBtn ? activeBtn.getAttribute('onclick').match(/'([^']+)'/)[1] : 'alphabetical';
+                renderRecipes(mode, activeBtn);
+            });
+        }
+        
+        // Default startup view: Alphabetical
         renderRecipes('alphabetical', document.querySelector('.sort-btn button.active'));
     } catch (error) {
         console.error("Error loading the recipe database:", error);
@@ -119,6 +130,7 @@ function generateTileHTML(recipe) {
 
 function renderRecipes(sortType, clickedButton) {
     const container = document.getElementById('recipe-list');
+    const searchBar = document.getElementById('search-bar');
     if (!container || !allRecipes.length) return;
 
     // 1. Handle Button Appearance
@@ -126,11 +138,18 @@ function renderRecipes(sortType, clickedButton) {
     buttons.forEach(btn => btn.classList.remove('active'));
     if (clickedButton) clickedButton.classList.add('active');
 
+    // 2. Filter Recipes based on search input
+    const query = searchBar ? searchBar.value.toLowerCase() : "";
+    const filteredRecipes = allRecipes.filter(r => 
+        r.title.toLowerCase().includes(query) || 
+        r.tags.some(tag => tag.toLowerCase().includes(query))
+    );
+
     let htmlContent = "";
 
-    // 2. Sorting & Grouping Logic
+    // 3. Sorting & Grouping Logic
     if (sortType === 'alphabetical') {
-        const sorted = [...allRecipes].sort((a, b) => a.title.localeCompare(b.title));
+        const sorted = [...filteredRecipes].sort((a, b) => a.title.localeCompare(b.title));
         let currentLetter = "";
         sorted.forEach(recipe => {
             const firstLetter = recipe.title.charAt(0).toUpperCase();
@@ -143,15 +162,13 @@ function renderRecipes(sortType, clickedButton) {
     } 
     
     else if (sortType === 'rating') {
-        const sorted = [...allRecipes].sort((a, b) => b.rating - a.rating);
+        const sorted = [...filteredRecipes].sort((a, b) => b.rating - a.rating);
         let currentRating = null;
         
         sorted.forEach(recipe => {
             if (recipe.rating !== currentRating) {
                 currentRating = recipe.rating;
                 const percentage = (currentRating / 5) * 100;
-
-                // Using the same mask structure for the header
                 htmlContent += `
                     <div class="index-letter">
                         <div class="star-rating-wrapper">
@@ -165,19 +182,26 @@ function renderRecipes(sortType, clickedButton) {
     }
     
     else if (sortType === 'tags') {
-        // Get unique tags and sort them
-        const tags = [...new Set(allRecipes.flatMap(r => r.tags))].sort();
+        const tags = [...new Set(filteredRecipes.flatMap(r => r.tags))].sort();
         tags.forEach(tag => {
             htmlContent += `<h2 class="index-letter" style="text-transform: capitalize;">${tag}</h2>`;
-            const matches = allRecipes.filter(r => r.tags.includes(tag));
+            const matches = filteredRecipes.filter(r => r.tags.includes(tag));
             matches.forEach(recipe => {
                 htmlContent += generateTileHTML(recipe);
             });
         });
     }
 
-    container.innerHTML = htmlContent;
+    // 4. Update the DOM
+    container.innerHTML = htmlContent || `<p class="no-results">No matches found for "${query}"</p>`;
 }
 
-// Fire the engine when the DOM is ready
-document.addEventListener('DOMContentLoaded', loadRecipeIndex);
+// Global initialization
+document.addEventListener('DOMContentLoaded', () => {
+    // Keep your template loader check
+    if (document.getElementById('recipe-title')) {
+        loadRecipe();
+    }
+    // Load the index
+    loadRecipeIndex();
+});
