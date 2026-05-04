@@ -81,73 +81,103 @@ if (document.getElementById('recipe-title'))
 //  RECIPE INDEX LOADER
 //------------------------
 
+let allRecipes = []; // Global storage so we don't fetch JSON every time we click a button
+
 async function loadRecipeIndex() {
     const container = document.getElementById('recipe-list');
-    if (!container) return; // Guard clause to prevent errors on other pages
+    if (!container) return;
 
     try {
         const response = await fetch('database.json');
         const data = await response.json();
+        allRecipes = data.recipes;
         
-        // 1. Sort Alphabetically
-        const sortedRecipes = data.recipes.sort((a, b) => a.title.localeCompare(b.title));
+        // Default startup: Alphabetical
+        renderRecipes('alphabetical', document.querySelector('.sort-btn button.active'));
+    } catch (error) {
+        console.error("Error loading the recipe database:", error);
+    }
+}
 
+function generateTileHTML(recipe) {
+    const percentage = (recipe.rating / 5) * 100;
+    return `
+        <a href="template.html?id=${recipe.id}" class="recipe-tile">
+            <div class="tile-bg" style="background-image: url('${recipe.bgImage}')"></div>
+            <div class="tile-info">
+                <h3>${recipe.title}</h3>
+                <div class="rating-container">
+                    <div class="star-rating-wrapper">
+                        <div class="stars-empty">☆☆☆☆☆</div>
+                        <div class="stars-full" style="width: ${percentage}%">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    `;
+}
+
+function renderRecipes(sortType, clickedButton) {
+    const container = document.getElementById('recipe-list');
+    if (!container || !allRecipes.length) return;
+
+    // 1. Handle Button Appearance
+    const buttons = document.querySelectorAll('.sort-btn button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    if (clickedButton) clickedButton.classList.add('active');
+
+    let htmlContent = "";
+
+    // 2. Sorting & Grouping Logic
+    if (sortType === 'alphabetical') {
+        const sorted = [...allRecipes].sort((a, b) => a.title.localeCompare(b.title));
         let currentLetter = "";
-        let htmlContent = "";
-
-        // 2. Build the HTML string
-        sortedRecipes.forEach(recipe => {
+        sorted.forEach(recipe => {
             const firstLetter = recipe.title.charAt(0).toUpperCase();
-
-            // Inject the Letter Header if it's a new starting letter
             if (firstLetter !== currentLetter) {
                 currentLetter = firstLetter;
                 htmlContent += `<h2 class="index-letter">${currentLetter}</h2>`;
             }
-
-            const percentage = (recipe.rating / 5) * 100;
-
-            // 2. Build the Tile string
-            htmlContent += `
-                <a href="template.html?id=${recipe.id}" class="recipe-tile">
-                    <div class="tile-bg" style="background-image: url('${recipe.bgImage}')"></div>
-                    <div class="tile-info">
-                        <h3>${recipe.title}</h3>
-                        <div class="rating-container">
-                            <div class="star-rating-wrapper">
-                                <div class="stars-empty">☆☆☆☆☆</div>
-                                <div class="stars-full" style="width: ${percentage}%">★★★★★</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            `;
+            htmlContent += generateTileHTML(recipe);
         });
+    } 
+    
+    else if (sortType === 'rating') {
+        const sorted = [...allRecipes].sort((a, b) => b.rating - a.rating);
+        let currentRating = null;
+        
+        sorted.forEach(recipe => {
+            if (recipe.rating !== currentRating) {
+                currentRating = recipe.rating;
+                const percentage = (currentRating / 5) * 100;
 
-        // 3. Dump it all into the DOM at once for better performance
-        container.innerHTML = htmlContent;
-
-    } catch (error) {
-        console.error("Error loading the recipe database:", error);
-        container.innerHTML = "<p>Failed to load recipes. Check console for details.</p>";
+                // Using the same mask structure for the header
+                htmlContent += `
+                    <div class="index-letter">
+                        <div class="star-rating-wrapper">
+                            <div class="stars-empty">☆☆☆☆☆</div>
+                            <div class="stars-full" style="width: ${percentage}%">★★★★★</div>
+                        </div>
+                    </div>`;
+            }
+            htmlContent += generateTileHTML(recipe);
+        });
     }
+    
+    else if (sortType === 'tags') {
+        // Get unique tags and sort them
+        const tags = [...new Set(allRecipes.flatMap(r => r.tags))].sort();
+        tags.forEach(tag => {
+            htmlContent += `<h2 class="index-letter" style="text-transform: capitalize;">${tag}</h2>`;
+            const matches = allRecipes.filter(r => r.tags.includes(tag));
+            matches.forEach(recipe => {
+                htmlContent += generateTileHTML(recipe);
+            });
+        });
+    }
+
+    container.innerHTML = htmlContent;
 }
 
 // Fire the engine when the DOM is ready
 document.addEventListener('DOMContentLoaded', loadRecipeIndex);
-
-//-------------------------------
-//  RECIPE INDEX FILTER BUTTONS
-//-------------------------------
-function renderRecipes(sortType, clickedButton) {
-    // 1. Remove 'active' class from all buttons in the sort container
-    const buttons = document.querySelectorAll('.sort-btn button');
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    // 2. Add 'active' class to the button that was clicked
-    clickedButton.classList.add('active');
-
-    // 3. Trigger your sorting logic here
-    console.log("Sorting recipes by:", sortType);
-    // [Insert your logic to sort/render the list here]
-}

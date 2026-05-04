@@ -354,6 +354,12 @@ ul, ol
     white-space: nowrap;
     color: #000000;
 }
+.index-letter .star-rating-wrapper 
+{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
 
 /*Content*/
 .content 
