@@ -8,13 +8,12 @@
       "rating": 4,
       "tags": 
       [
+        "Supper",
         "Main", 
         "Soup",
         "Fall",
         "Easy",
-        "Stove Top",
-        "Vegetable", 
-        "Bread",
+        "Stove-Top",
         "American"
       ],
       "stats": 
@@ -87,12 +86,12 @@
       "rating": 4.5,
       "tags": 
       [
+        "Supper",
         "Main", 
         "Soup",
         "Winter",
         "Easy",
-        "Stove Top",
-        "Vegetable",
+        "Stove-Top",
         "American"
       ],
       "stats": 
@@ -143,6 +142,7 @@
       "rating": 5,
       "tags": 
       [
+        "Supper",
         "Main", 
         "Casserole",
         "Medium",

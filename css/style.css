@@ -128,7 +128,7 @@ ul, ol
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 11rem;
     height: 100%;
@@ -233,6 +233,7 @@ ul, ol
 {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 #tags-list li a 
 {
@@ -241,15 +242,16 @@ ul, ol
     font-family: Degular-Mono-Semibold, sans-serif;
     font-style: normal;
     font-size: 1rem;
+    white-space: nowrap;
 }
 #tags-list li a:hover 
 {
     text-decoration: underline;
 }
-#tags-list li:not(:last-child)::after 
+#tags-list li:not(:first-child)::before 
 {
     content: "•";
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .header-overlay 
 {
@@ -544,10 +546,6 @@ li
 /*Responsive Navigation*/
 @media (max-width: 600px) 
 {
-    .header-links a:first-child 
-    {
-        display: none;
-    }
     .header-links 
     {
         width: auto;
