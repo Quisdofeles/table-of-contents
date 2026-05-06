@@ -13,7 +13,7 @@
         "Soup",
         "Fall",
         "Easy",
-        "Stove-Top",
+        "Stove Top",
         "American"
       ],
       "stats": 
@@ -91,7 +91,7 @@
         "Soup",
         "Winter",
         "Easy",
-        "Stove-Top",
+        "Stove Top",
         "American"
       ],
       "stats": 
@@ -202,6 +202,170 @@
           "steps": 
           [
             "Just before serving, top with chopped tomato, cucumbers, and lettuce."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "baked-oatmeal",
+      "title": "Baked Oatmeal",
+      "bgImage": "images/BakedOatmeal.webp",
+      "rating": 4,
+      "tags": 
+      [
+        "Breakfast",
+        "Main", 
+        "Bake",
+        "Easy",
+        "Oven",
+        "American"
+      ],
+      "stats": 
+      {
+        "servings": "6 Servings",
+        "time": "45 Min",
+        "calories": "210 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Bake",
+          "items": 
+          [
+            "1/2 cup vegetable oil", 
+            "3/4 cup white sugar", 
+            "2 eggs", 
+            "1 cup milk",
+            "1/2 teaspoon salt",
+            "1 tablespoon baking powder", 
+            "3 cups quick cooking oats", 
+            "1 tablespoon brown sugar", 
+            "1/4 teaspoon ground cinimon",
+            "1/4 teaspoon nutmeg"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Bake",
+          "steps": 
+          [
+            "Mix all ingredients into a 9x9 baking pan.",
+            "Pre-heat oven to 350° and bake for 35 minutes."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "banana-pancakes",
+      "title": "Banana Pancakes",
+      "bgImage": "images/BananaPancakes.webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Breakfast",
+        "Main", 
+        "Pastry",
+        "Easy",
+        "Stove Top",
+        "American"
+      ],
+      "stats": 
+      {
+        "servings": "12 Pancakes",
+        "time": "30 Min",
+        "calories": "140 Cal/Cake",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Pastry",
+          "items": 
+          [
+            "2 cups flour", 
+            "4 teaspoons baking powder", 
+            "2 eggs", 
+            "1/4 cup oil",
+            "2 cups milk",
+            "2 mushed bananas"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Pastry",
+          "steps": 
+          [
+            "In a mixing bowl, combine all ingredients.",
+            "Pour about half a cup of batter onto a hotplate.",
+            "Cook until light-brown on the bottom, then flip."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "speedy-stroganoff",
+      "title": "Speedy Stroganoff",
+      "bgImage": "images/SpeedyStroganoff.webp",
+      "rating": 4,
+      "tags": 
+      [
+        "Supper",
+        "Main", 
+        "Stroganoff",
+        "Intermediate",
+        "Stove Top",
+        "American"
+      ],
+      "stats": 
+      {
+        "servings": "6 Servings",
+        "time": "45 Min",
+        "calories": "390 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Stroganoff",
+          "items": 
+          [
+            "2 tablespoons oil", 
+            "1 pound ground beef", 
+            "1 garlic clove, minced", 
+            "1/3 onion, chopped",
+            "2 tablespoon flour",
+            "1 teaspoon salt",
+            "1/2 teaspoon paprika",
+            "1/2 cup water",
+            "8 ounce sour cream",
+            "10 ounce canned mushroom, pre-cut",
+            "10 3/4 ounce cream of chiken soup, undiluted"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Stroganoff",
+          "steps": 
+          [
+            "In a skillet, heat oil over medium-high heat.",
+            "Saute beef, garlic, and onion.",
+            "When onion is tender, reduce heat to low, stir in flour, salt, paprika. Cook 5 minutes.",
+            "Stir in mushrooms, soup, and water. Simmer 10 minutes.",
+            "Fold in sour cream, heat through but do not boil.",
+            "Serve immediatly over rice or noodles."
           ]
         }
       ]
