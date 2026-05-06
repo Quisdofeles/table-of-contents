@@ -78,7 +78,6 @@
         }
       ]
     },
-
     {
       "id": "stuffed-pepper-soup",
       "title": "Stuffed Pepper Soup",
@@ -134,7 +133,6 @@
         }
       ]
     },
-    
     {
       "id": "taco-salad",
       "title": "Taco Salad",
@@ -160,7 +158,7 @@
       "ingredients": 
       [
         {
-          "section": "Soup",
+          "section": "Casserole",
           "items": 
           [
             "1 pound ground beef", 
@@ -206,7 +204,6 @@
         }
       ]
     },
-    
     {
       "id": "baked-oatmeal",
       "title": "Baked Oatmeal",
@@ -260,7 +257,6 @@
         }
       ]
     },
-    
     {
       "id": "banana-pancakes",
       "title": "Banana Pancakes",
@@ -311,7 +307,6 @@
         }
       ]
     },
-
     {
       "id": "speedy-stroganoff",
       "title": "Speedy Stroganoff",
@@ -366,6 +361,249 @@
             "Stir in mushrooms, soup, and water. Simmer 10 minutes.",
             "Fold in sour cream, heat through but do not boil.",
             "Serve immediatly over rice or noodles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baked-beef-ziti",
+      "title": "Baked Beef Ziti",
+      "bgImage": "images/BakkedZiti.webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Supper",
+        "Main", 
+        "Casserole",
+        "Easy",
+        "Oven",
+        "Italian"
+      ],
+      "stats": 
+      {
+        "servings": "10 Servings",
+        "time": "60 Min",
+        "calories": "578 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Casserole",
+          "items": 
+          [
+            "1 pound dry ziti pasta", 
+            "1 onion, chopped", 
+            "1 pound lean ground beef", 
+            "2 (26 ounce) jars spaghetti sauce",
+            "6 ounces provolone cheese, sliced",
+            "1 1/2 cups sour cream", 
+            "6 ounces mozzarella cheese, shredded", 
+            "2 tablespoons grated Parmesan cheese"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Casserole",
+          "steps": 
+          [
+            "Bring a large pot of lightly salted water to a boil. Add ziti pasta, and cook until al dente, about 8 minutes; drain.",
+            "Brown ground beef and onion in a large skillet over medium heat; stir in spaghetti sauce and simmer for 15 minutes.",
+            "Preheat the oven to 350 degrees F (175 degrees C).",
+            "Butter a 9x13-inch baking dish.",
+            "Spread 1/2 of the ziti in the bottom of the prepared dish, top with Provolone cheese, top with sour cream.",
+            "Add 1/2 of the meat sauce, remaining ziti, mozzarella cheese, and remaining meat sauce and top with grated Parmesan cheese.",
+            "Bake in the preheated oven until heated through and cheeses have melted, about 30 minutes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baked-potato-soup",
+      "title": "Baked Potato Soup",
+      "bgImage": "images/PotatoSoup.webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Supper",
+        "Main", 
+        "Soup",
+        "Intermediate",
+        "Stove Top",
+        "American"
+      ],
+      "stats": 
+      {
+        "servings": "8 Servings",
+        "time": "50 Min",
+        "calories": "485 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Soup",
+          "items": 
+          [
+            "2 1/2 pounds russet potatoes, washed and peeled", 
+            "8 tablespoons butter", 
+            "1/2 cup all-purpose flour", 
+            "1 1/2 quarts chicken stock",
+            "2 cups heavy cream",
+            "2 teaspoons salt", 
+            "1 teaspoon ground white pepper"
+          ]
+        },
+        {
+          "section": "Garnish",
+          "items": 
+          [
+            "1/2 cup crumbled bacon to garnish", 
+            "1/2 cup chopped chives to garnish",
+            "1/2 cup shredded Cheddar cheese to garnish"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Soup",
+          "steps": 
+          [
+            "Cut potatoes into 3/8-inch cubes.",
+            "Place the potato cubes in a bowl and add enough water to cover the potatoes. Soak for 5 minutes.",
+            "Melt the butter in a large pot over medium heat.",
+            "Saute beef, garlic, and onion.",
+            "When the butter has melted, add the all-purpose flour. Cook on medium heat for about 1 minute. The mixture should become fragrant and smell like pie dough.",
+            "Add the chicken stock and heavy cream. Stir until the soup thickens.",
+            "Drain the potatoes and add them to the pot.",
+            "Season with salt and ground white pepper.",
+            "Cook until the potatoes are fork tender, about 30 minutes."
+          ]
+        },
+        {
+          "section": "Garnish",
+          "items": 
+          [
+            "Serve garnished with crumbled bacon, chopped green onions, and shredded cheese."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spaghetti-and-meatballs",
+      "title": "Spaghetti and Meatballs",
+      "bgImage": "images/SpeghettiAndMeatballs.Webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Supper",
+        "Main", 
+        "Pasta",
+        "Easy",
+        "Stove Top",
+        "Italian"
+      ],
+      "stats": 
+      {
+        "servings": "8 Servings",
+        "time": "30 Min",
+        "calories": "442 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Pasta",
+          "items": 
+          [
+            "1 pound spaghetti, uncooked", 
+            "1 jar (45 ounces) Italian Sauce", 
+            "16 ounces frozen fully-cooked meatballs",
+            "1/4 cup grated Parmesan cheese (optional)"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Pasta",
+          "steps": 
+          [
+            "Cook and drain the spaghetti according to the package directions.",
+            "While the spaghetti is cooking, heat the sauce and meatballs in a 3-quart saucepan over medium heat to a boil.",
+            "Reduce the heat to low. Cover and cook for 20 minutes or until the meatballs are heated through, stirring occasionally.",
+            "Serve the sauce and meatballs over the spaghetti. Sprinkle with the cheese, if desired."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moms-lasagna",
+      "title": "Moms Lasagna",
+      "bgImage": "images/MomsLasanga.webp",
+      "rating": 4.5,
+      "tags": 
+      [
+        "Supper",
+        "Main", 
+        "Pasta",
+        "Hard",
+        "Oven",
+        "Italian"
+      ],
+      "stats": 
+      {
+        "servings": "12 Servings",
+        "time": "150 Min",
+        "calories": "405 Cal/Ser",
+        "difficulty": "Hard",
+        "difficultyIcon": "images/Hard-Icon.webp"
+      },
+      "ingredients": 
+      [
+        {
+          "section": "Pasta",
+          "items": 
+          [
+            "1 pound ground beef",
+            "1 large onion, chopped", 
+            "3 garlic cloves, minced",
+            "1 can (28 ounces) crushed tomatoes, undrained",
+            "1 can (6 ounces) tomato paste", 
+            "1 cups water", 
+            "1 cup salsa", 
+            "2 teaspoons sugar",
+            "2 teaspoons chili powder",
+            "1 teaspoon fennel seed",
+            "1 teaspoon dried oregano",
+            "1 teaspoon dried basil", 
+            "9 lasanga noodles", 
+            "1 carton (16 ounces) cottage cheese",
+            "4 cups (1 pound) shredded chedder cheese",
+            "3/4 cups grated parmesan cheese"
+          ]
+        }
+      ],
+      "instructions": 
+      [
+        {
+          "section": "Pasta",
+          "steps": 
+          [
+            "In a large kettle or dutch oven, cook beef with onion untill meat is browned.",
+            "Stir in the next 10 ingredients. Simmer, uncovered, for 30 minutes, stirring occasionally.",
+            "Meanwhile, cook lasanga noodles according to pack instructions.",
+            "In a greased 13x9 baking dish, layer a third of the noodles and meat sauce, half the cottage cheese, a third of the chedder cheese, and a third of the parmesan.",
+            "Repeat layers.",
+            "Top with remaining noodles, meat sauce, parmesan.",
+            "Cover and bake at 350° for 45 minutes.",
+            "Uncover and bake for 20 minutes."
           ]
         }
       ]
