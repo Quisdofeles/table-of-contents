@@ -4,7 +4,7 @@
   cursor: pointer;
   border-radius: 16px;
   overflow: hidden;
-  background: white;
+  border: 2px solid var(--color-ui);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 

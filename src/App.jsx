@@ -4,6 +4,7 @@ import recipesData from './data/recipes.json'
 import Header from './components/Header'
 import RecipeGrid from './components/RecipeGrid'
 import ExpandedRecipe from './components/ExpandedRecipe'
+import styles from './App.module.css'
 
 const allRecipes = recipesData.recipes.slice().sort((a, b) =>
   a.title.localeCompare(b.title)
@@ -50,7 +51,7 @@ export default function App() {
         allTags={allTags}
         onLogoClick={handleLogoClick}
       />
-      <main style={{ paddingTop: '100px' }} ref={contentRef}>
+      <main className={styles.main} ref={contentRef}>
         <AnimatePresence mode="wait">
           {selectedRecipe ? (
             <div key="expanded">

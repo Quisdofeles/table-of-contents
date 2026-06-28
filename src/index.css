@@ -79,7 +79,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: #FFFFFF;
   color: var(--color-text-primary);
   font-family: var(--font-text-semibold);
   -webkit-font-smoothing: antialiased;

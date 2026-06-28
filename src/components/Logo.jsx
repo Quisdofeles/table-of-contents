@@ -1,7 +1,7 @@
 export default function Logo({ onClick }) {
   return (
-    <button onClick={onClick} style={{ display: 'flex', alignItems: 'center', padding: 0 }} aria-label="Home">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="48" height="48" style={{ color: 'var(--color-text-primary)' }}>
+    <button onClick={onClick} className="logo-button" aria-label="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" style={{ width: '100%', height: '100%', color: 'var(--color-text-primary)', display: 'block' }}>
         <path id="T" fill="currentColor" d="M19.17,22.15h80.78v28.16h-27.81v77.44h-31.68V50.31h-21.3v-28.16Z"/>
         <g id="Text" fill="currentColor">
           <path d="M87.68,127.75v-9.92h3.4v3.16h8.6v3.6h-8.6v3.16h-3.4Z"/>

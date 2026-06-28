@@ -101,7 +101,7 @@
             "1 cup uncooked long grain rice",
             "1 celery rib, diced",
             "1 large onion, diced",
-            "3 chiken bouillon cubes",
+            "3 chicken bouillon cubes",
             "2 garlic cloves, minced",
             "1/2 teaspoon salt"
           ]
@@ -112,7 +112,7 @@
           "section": "Soup",
           "steps": [
             "In a large kettle or Dutch oven over medium heat, cook beef until no longer pink; drain.",
-            "add the remaining ingredients; bring to a boil.",
+            "Add the remaining ingredients; bring to a boil.",
             "Reduce heat; simmer uncovered for 1 hour or until rice is tender."
           ]
         }
@@ -150,14 +150,14 @@
             "2 tbsp chili powder",
             "2 cups crushed tortilla chips",
             "1 cup (4 ounces) shredded Colby cheese",
-            "1 cup (4 ounces) shredded Monderey Jack cheese"
+            "1 cup (4 ounces) shredded Monterey Jack cheese"
           ]
         },
         {
           "section": "Salad",
           "items": [
-            "1 medium tomato; chopped",
-            "1 medium cucumber; chopped",
+            "1 medium tomato, chopped",
+            "1 medium cucumber, chopped",
             "2 cups shredded lettuce"
           ]
         }
@@ -189,9 +189,8 @@
       "tags": [
         "Breakfast",
         "Main",
-        "Bake",
-        "Easy",
         "Oven",
+        "Easy",
         "American"
       ],
       "stats": {
@@ -213,7 +212,7 @@
             "1 tablespoon baking powder",
             "3 cups quick cooking oats",
             "1 tablespoon brown sugar",
-            "1/4 teaspoon ground cinimon",
+            "1/4 teaspoon ground cinnamon",
             "1/4 teaspoon nutmeg"
           ]
         }
@@ -257,7 +256,7 @@
             "2 eggs",
             "1/4 cup oil",
             "2 cups milk",
-            "2 mushed bananas"
+            "2 mashed bananas"
           ]
         }
       ],
@@ -306,7 +305,7 @@
             "1/2 cup water",
             "8 ounce sour cream",
             "10 ounce canned mushroom, pre-cut",
-            "10 3/4 ounce cream of chiken soup, undiluted"
+            "10 3/4 ounce cream of chicken soup, undiluted"
           ]
         }
       ],
@@ -319,7 +318,7 @@
             "When onion is tender, reduce heat to low, stir in flour, salt, paprika. Cook 5 minutes.",
             "Stir in mushrooms, soup, and water. Simmer 10 minutes.",
             "Fold in sour cream, heat through but do not boil.",
-            "Serve immediatly over rice or noodles."
+            "Serve immediately over rice or noodles."
           ]
         }
       ]
@@ -333,6 +332,7 @@
         "Supper",
         "Main",
         "Casserole",
+        "Pasta",
         "Easy",
         "Oven",
         "Italian"
@@ -423,7 +423,6 @@
             "Cut potatoes into 3/8-inch cubes.",
             "Place the potato cubes in a bowl and add enough water to cover the potatoes. Soak for 5 minutes.",
             "Melt the butter in a large pot over medium heat.",
-            "Saute beef, garlic, and onion.",
             "When the butter has melted, add the all-purpose flour. Cook on medium heat for about 1 minute. The mixture should become fragrant and smell like pie dough.",
             "Add the chicken stock and heavy cream. Stir until the soup thickens.",
             "Drain the potatoes and add them to the pot.",
@@ -484,7 +483,7 @@
     },
     {
       "id": "moms-lasagna",
-      "title": "Moms Lasagna",
+      "title": "Mom's Lasagna",
       "bgImage": "images/MomsLasanga.webp",
       "aspectRatio": "4/7",
       "tags": [
@@ -511,16 +510,16 @@
             "3 garlic cloves, minced",
             "1 can (28 ounces) crushed tomatoes, undrained",
             "1 can (6 ounces) tomato paste",
-            "1 cups water",
+            "1 cup water",
             "1 cup salsa",
             "2 teaspoons sugar",
             "2 teaspoons chili powder",
             "1 teaspoon fennel seed",
             "1 teaspoon dried oregano",
             "1 teaspoon dried basil",
-            "9 lasanga noodles",
+            "9 lasagna noodles",
             "1 carton (16 ounces) cottage cheese",
-            "4 cups (1 pound) shredded chedder cheese",
+            "4 cups (1 pound) shredded cheddar cheese",
             "3/4 cups grated parmesan cheese"
           ]
         }
@@ -529,10 +528,10 @@
         {
           "section": "Pasta",
           "steps": [
-            "In a large kettle or dutch oven, cook beef with onion untill meat is browned.",
+            "In a large kettle or dutch oven, cook beef with onion until meat is browned.",
             "Stir in the next 10 ingredients. Simmer, uncovered, for 30 minutes, stirring occasionally.",
-            "Meanwhile, cook lasanga noodles according to pack instructions.",
-            "In a greased 13x9 baking dish, layer a third of the noodles and meat sauce, half the cottage cheese, a third of the chedder cheese, and a third of the parmesan.",
+            "Meanwhile, cook lasagna noodles according to package instructions.",
+            "In a greased 13x9 baking dish, layer a third of the noodles and meat sauce, half the cottage cheese, a third of the cheddar cheese, and a third of the parmesan.",
             "Repeat layers.",
             "Top with remaining noodles, meat sauce, parmesan.",
             "Cover and bake at 350° for 45 minutes.",
