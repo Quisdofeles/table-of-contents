@@ -24,7 +24,7 @@ export default function CopyButton({ getText }) {
         padding: '6px 10px',
         borderRadius: '8px',
         background: 'var(--color-ui)',
-        transition: 'color 0.15s ease, background 0.15s ease',
+        transition: 'color 0.1s ease, background 0.1s ease',
         color: copied ? 'var(--color-accent)' : 'var(--color-text-secondary)',
         fontSize: '13px',
         fontFamily: 'var(--font-text-semibold)',

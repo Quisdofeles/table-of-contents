@@ -4,6 +4,7 @@ import recipesData from './data/recipes.json'
 import Header from './components/Header'
 import RecipeGrid from './components/RecipeGrid'
 import ExpandedRecipe from './components/ExpandedRecipe'
+import Footer from './components/Footer'
 import styles from './App.module.css'
 
 const allRecipes = recipesData.recipes.slice().sort((a, b) =>
@@ -44,7 +45,7 @@ export default function App() {
     : []
 
   return (
-    <>
+    <div className={styles.layout}>
       <Header
         onSearch={setSearchQuery}
         onTagFilter={setSelectedTag}
@@ -67,6 +68,7 @@ export default function App() {
           )}
         </AnimatePresence>
       </main>
-    </>
+      <Footer />
+    </div>
   )
 }

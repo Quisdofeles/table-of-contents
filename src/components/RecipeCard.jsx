@@ -5,12 +5,12 @@ export default function RecipeCard({ recipe, index, onClick }) {
   return (
     <motion.div
       className={styles.card}
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35, delay: index * 0.05, ease: [0.25, 0.46, 0.45, 0.94] }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] } },
+      }}
+      whileHover={{ scale: 1.025, transition: { duration: 0.1, ease: "easeOut" } }}
       onClick={() => onClick(recipe)}
-      layout
-      layoutId={`card-${recipe.id}`}
     >
       <div className={styles.imageWrap}>
         <img

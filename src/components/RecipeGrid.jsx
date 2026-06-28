@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import RecipeCard from './RecipeCard'
 import styles from './RecipeGrid.module.css'
 
@@ -8,28 +9,30 @@ function getColCount(containerWidth) {
   return Math.max(1, Math.floor(containerWidth / MIN_COL_WIDTH))
 }
 
+const columnVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.04,
+    },
+  },
+}
+
 export default function RecipeGrid({ recipes, onSelectRecipe }) {
   const gridRef = useRef(null)
-  const [colCount, setColCount] = useState(4)
+  const [colCount, setColCount] = useState(() => getColCount(window.innerWidth))
 
   useEffect(() => {
     const el = gridRef.current
     if (!el) return
 
-    let timeout
     const observer = new ResizeObserver((entries) => {
-      clearTimeout(timeout)
-      timeout = setTimeout(() => {
-        const width = entries[0].contentRect.width
-        setColCount(getColCount(width))
-      }, 100)
+      const width = entries[0].contentRect.width
+      setColCount(getColCount(width))
     })
 
     observer.observe(el)
-    return () => {
-      clearTimeout(timeout)
-      observer.disconnect()
-    }
+    return () => observer.disconnect()
   }, [])
 
   const columns = Array.from({ length: colCount }, () => [])
@@ -40,7 +43,13 @@ export default function RecipeGrid({ recipes, onSelectRecipe }) {
   return (
     <div className={styles.grid} ref={gridRef}>
       {columns.map((col, colIndex) => (
-        <div key={colIndex} className={styles.column}>
+        <motion.div
+          key={colIndex}
+          className={styles.column}
+          initial="hidden"
+          animate="visible"
+          variants={columnVariants}
+        >
           {col.map(({ recipe, index }) => (
             <RecipeCard
               key={recipe.id}
@@ -49,7 +58,7 @@ export default function RecipeGrid({ recipes, onSelectRecipe }) {
               onClick={onSelectRecipe}
             />
           ))}
-        </div>
+        </motion.div>
       ))}
     </div>
   )

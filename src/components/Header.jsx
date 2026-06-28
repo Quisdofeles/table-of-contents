@@ -56,6 +56,7 @@ export default function Header({ onSearch, onTagFilter, allTags, onLogoClick }) 
               placeholder="Search recipes..."
               value={searchValue}
               onChange={handleSearch}
+              onKeyDown={(e) => { if (e.key === 'Enter') e.target.blur() }}
               className={styles.searchInput}
             />
           </div>
