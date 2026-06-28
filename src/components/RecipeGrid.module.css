@@ -1,26 +1,16 @@
 .grid {
-  columns: 4;
-  column-gap: 24px;
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  gap: 24px;
   padding: 0 32px;
 }
 
-@media (max-width: 1200px) {
-  .grid {
-    columns: 3;
-  }
-}
-
-@media (max-width: 900px) {
-  .grid {
-    columns: 2;
-  }
+.column {
+  flex: 1;
+  min-width: 0;
 }
 
 @media (max-width: 600px) {
   .grid {
-    columns: 1;
     padding: 0 16px;
   }
 }

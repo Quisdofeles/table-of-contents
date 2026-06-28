@@ -57,7 +57,7 @@ export default function App() {
             <div key="expanded">
               <ExpandedRecipe recipe={selectedRecipe} onBack={handleBack} />
               {remainingRecipes.length > 0 && (
-                <div style={{ marginTop: '48px' }}>
+                <div style={{ marginTop: '16px' }}>
                   <RecipeGrid recipes={remainingRecipes} onSelectRecipe={handleSelectRecipe} />
                 </div>
               )}

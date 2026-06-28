@@ -1,7 +1,5 @@
 .wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 32px 48px;
+  padding: 16px 32px 48px;
 }
 
 .backButton {
@@ -15,7 +13,7 @@
   border-radius: 8px;
   background: var(--color-ui);
   margin-bottom: 16px;
-  transition: color 0.15s ease, background 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
 
 .backButton:hover {
@@ -26,16 +24,16 @@
   font-family: var(--font-display-bold);
   font-size: 36px;
   color: var(--color-text-primary);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 32px;
+  gap: 16px;
+  max-width: 1600px;
+  margin: 0;
 }
-
-.colImage {}
 
 .heroImage {
   width: 100%;
@@ -46,8 +44,8 @@
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .statItem {
