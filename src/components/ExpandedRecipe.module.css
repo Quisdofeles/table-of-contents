@@ -1,0 +1,149 @@
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px 48px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-text-semibold);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  padding: 8px 0;
+  margin-bottom: 16px;
+  transition: color 0.15s ease;
+}
+
+.backButton:hover {
+  color: var(--color-accent);
+}
+
+.title {
+  font-family: var(--font-display-bold);
+  font-size: 36px;
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.colImage {}
+
+.heroImage {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.statIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.statValue {
+  font-family: var(--font-din-bold);
+  font-size: 13px;
+  color: var(--color-text-primary);
+}
+
+.colIngredients,
+.colInstructions {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.colHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.colTitle {
+  font-family: var(--font-display-bold);
+  font-size: 20px;
+  color: var(--color-text-primary);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-text-bold);
+  font-size: 14px;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.ingredientList {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.ingredientItem {
+  font-family: var(--font-text-semibold);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 1.8;
+}
+
+.stepList {
+  padding-left: 20px;
+}
+
+.stepItem {
+  font-family: var(--font-text-semibold);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.stepItem:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .wrapper {
+    padding: 0 16px 32px;
+  }
+}

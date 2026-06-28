@@ -1,0 +1,31 @@
+{
+  "name": "table-of-contents",
+  "version": "1.0.0",
+  "description": "Table of Contents is the Book family's digital recipe collection — Where each recipe describes a mouthwatering story. Explore generations of family favorites, discover new dishes, and connect through the joy of home cooking.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quisdofeles/table-of-contents.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quisdofeles/table-of-contents/issues"
+  },
+  "homepage": "https://github.com/Quisdofeles/table-of-contents#readme",
+  "dependencies": {
+    "framer-motion": "^12.42.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "vite": "^8.1.0"
+  }
+}

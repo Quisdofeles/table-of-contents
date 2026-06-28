@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Degular Display Bold';
+  src: url('/fonts/DegularDisplayDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display Semibold';
+  src: url('/fonts/DegularDisplayDemo-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text Bold';
+  src: url('/fonts/DegularTextDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text Semibold';
+  src: url('/fonts/DegularTextDemo-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono Bold';
+  src: url('/fonts/DegularMonoDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono Semibold';
+  src: url('/fonts/DegularMonoDemo-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN Bold';
+  src: url('/fonts/D-DIN-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #F7F8F3;
+  --color-accent: #F7444E;
+  --color-ui: #ECEEE7;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #888888;
+
+  --font-display-bold: 'Degular Display Bold', sans-serif;
+  --font-display-semibold: 'Degular Display Semibold', sans-serif;
+  --font-text-bold: 'Degular Text Bold', sans-serif;
+  --font-text-semibold: 'Degular Text Semibold', sans-serif;
+  --font-mono-bold: 'Degular Mono Bold', monospace;
+  --font-mono-semibold: 'Degular Mono Semibold', monospace;
+  --font-din-bold: 'D-DIN Bold', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-text-semibold);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input, select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
