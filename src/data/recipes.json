@@ -4,12 +4,11 @@
       "id": "tomato-basil-soup",
       "title": "Tomato Basil Soup",
       "bgImage": "images/TomatoBasilSoup.webp",
-      "aspectRatio": "4/6",
+      "aspectRatio": "4/5",
       "tags": [
         "Supper",
         "Main",
         "Soup",
-        "Fall",
         "Easy",
         "Stove Top",
         "American"
@@ -78,7 +77,6 @@
         "Supper",
         "Main",
         "Soup",
-        "Winter",
         "Easy",
         "Stove Top",
         "American"
@@ -235,7 +233,6 @@
       "tags": [
         "Breakfast",
         "Main",
-        "Pastry",
         "Easy",
         "Stove Top",
         "American"
@@ -275,7 +272,7 @@
       "id": "speedy-stroganoff",
       "title": "Speedy Stroganoff",
       "bgImage": "images/SpeedyStroganoff.webp",
-      "aspectRatio": "4/6",
+      "aspectRatio": "4/5",
       "tags": [
         "Supper",
         "Main",
@@ -442,7 +439,7 @@
       "id": "spaghetti-and-meatballs",
       "title": "Spaghetti and Meatballs",
       "bgImage": "images/SpaghettiandMeatballs.webp",
-      "aspectRatio": "4/4",
+      "aspectRatio": "4/5",
       "tags": [
         "Supper",
         "Main",
@@ -536,6 +533,440 @@
             "Top with remaining noodles, meat sauce, parmesan.",
             "Cover and bake at 350° for 45 minutes.",
             "Uncover and bake for 20 minutes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garlic-rice",
+      "title": "Garlic Rice",
+      "bgImage": "images/GarlicRice.webp",
+      "aspectRatio": "4/5",
+      "tags": [
+        "Side",
+        "Rice",
+        "Easy",
+        "Stove Top",
+        "Mediterranean"
+      ],
+      "stats": {
+        "servings": "4 Servings",
+        "time": "25 Min",
+        "calories": "220 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Rice",
+          "items": [
+            "2 tsp coconut oil",
+            "1 tbsp butter",
+            "1 cup rice",
+            "3 garlic cloves, minced",
+            "2 cups water",
+            "1 chicken bouillon cube",
+            "1/4 tsp salt",
+            "1/4 tsp pepper",
+            "2 tsp parsley"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Rice",
+          "steps": [
+            "In a large saucepan, cook and stir rice and garlic in oil until lightly browned, about 2 minutes.",
+            "Add the water, bouillon, salt and pepper; bring to a boil.",
+            "Reduce heat; cover and simmer for about 13 minutes or until water is gone.",
+            "Stir in parsley; cover and cook 2-5 minutes longer until rice is tender."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blackened-chicken-and-beans",
+      "title": "Blackened Chicken and Beans",
+      "bgImage": "images/BlackenedChickenAndBeans.webp",
+      "aspectRatio": "4/6",
+      "tags": [
+        "Supper",
+        "Main",
+        "Chicken",
+        "Intermediate",
+        "Stove Top",
+        "Mediterranean"
+      ],
+      "stats": {
+        "servings": "4 Servings",
+        "time": "20 Min",
+        "calories": "320 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Chicken and Beans",
+          "items": [
+            "2 tsp chili powder",
+            "1/4 tsp salt",
+            "1/4 tsp pepper",
+            "4 boneless skinless chicken breast halves (4 ounces each)",
+            "1 tbsp canola oil",
+            "1 can black beans",
+            "1 cup canned corn",
+            "1 cup chunky salsa"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Chicken and Beans",
+          "steps": [
+            "Combine the chili powder, salt, and pepper; rub over both sides of chicken.",
+            "In a large nonstick skillet, cook chicken in oil over medium heat for 4-5 minutes on each side or until juices run clear.",
+            "Remove chicken and keep warm. Add the beans, corn, and salsa to skillet; bring to a boil.",
+            "Reduce heat; cover and simmer for 2-3 minutes or until heated through.",
+            "Transfer bean mixture to a serving dish; top with chicken."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-potato-bake",
+      "title": "Sweet Potato Bake",
+      "bgImage": "images/SweetPotatoBake.webp",
+      "aspectRatio": "4/5",
+      "tags": [
+        "Side",
+        "Bake",
+        "Oven",
+        "Easy",
+        "American"
+      ],
+      "stats": {
+        "servings": "8 Servings",
+        "time": "60 Min",
+        "calories": "340 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Bake",
+          "items": [
+            "3-4 sweet potatoes, mashed (3-4 cups)",
+            "1/2 cup sugar",
+            "1/2 cup milk",
+            "1/2 cup softened butter",
+            "1 egg",
+            "1 tsp salt",
+            "1 tsp vanilla extract"
+          ]
+        },
+        {
+          "section": "Topping",
+          "items": [
+            "1/2 cup packed brown sugar",
+            "1/2 cup chopped pecans",
+            "1/4 cup all-purpose flour",
+            "1-2 tbsp cold butter"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Bake",
+          "steps": [
+            "In a mixing bowl, beat sweet potatoes, sugar, milk, butter, salt, and vanilla until smooth.",
+            "Transfer to a greased 2-qt baking dish.",
+            "Sprinkle topping over potato mixture and bake uncovered at 325° for 45-50 minutes or until golden brown."
+          ]
+        },
+        {
+          "section": "Topping",
+          "steps": [
+            "In a small bowl, combine brown sugar, pecans, and flour; cut in butter until crumbly."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creamy-fettuccini-alfredo",
+      "title": "Creamy Fettuccini Alfredo",
+      "bgImage": "images/CreamyFettucciniAlfredo.webp",
+      "aspectRatio": "4/6",
+      "tags": [
+        "Supper",
+        "Main",
+        "Pasta",
+        "Easy",
+        "Stove Top",
+        "Italian"
+      ],
+      "stats": {
+        "servings": "4 Servings",
+        "time": "20 Min",
+        "calories": "620 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Alfredo",
+          "items": [
+            "1 (8-ounce) package cream cheese, cubed",
+            "3/4 cup (3 ounces) grated Parmesan cheese",
+            "1/2 cup butter",
+            "1/2 cup milk",
+            "8 ounces fettuccini, cooked and drained"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Alfredo",
+          "steps": [
+            "Cook pasta until tender.",
+            "In a large saucepan, combine cream cheese, Parmesan cheese, butter, and milk; stir over low heat until smooth.",
+            "Add cooked pasta; toss lightly."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tangy-green-beans",
+      "title": "Tangy Green Beans",
+      "bgImage": "images/TangyGreenBeans.webp",
+      "aspectRatio": "4/5",
+      "tags": [
+        "Side",
+        "Vegetables",
+        "Easy",
+        "Stove Top",
+        "American"
+      ],
+      "stats": {
+        "servings": "9 Servings",
+        "time": "20 Min",
+        "calories": "55 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Green Beans",
+          "items": [
+            "1-1/2 pounds fresh green beans, trimmed",
+            "1/3 cup diced sweet red pepper",
+            "4-1/2 tsp olive oil or canola oil",
+            "4-1/2 tsp water",
+            "1-1/2 tsp white wine vinegar",
+            "1-1/2 tsp spicy brown mustard",
+            "1/2 tsp salt",
+            "1/4 tsp pepper",
+            "1/8 tsp garlic powder"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Green Beans",
+          "steps": [
+            "Place beans and red pepper in a steamer basket over 1 inch of boiling water in a saucepan.",
+            "Cover and steam for 7-8 minutes or until crisp-tender.",
+            "Meanwhile, in a bowl, whisk together the remaining ingredients.",
+            "Transfer the beans to a serving bowl.",
+            "Add vinaigrette and stir to coat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chocolate-chip-cheesecake",
+      "title": "Chocolate Chip Cheesecake",
+      "bgImage": "images/ChocolateChipCheesecake.webp",
+      "aspectRatio": "4/4",
+      "tags": [
+        "Dessert",
+        "Bake",
+        "Oven",
+        "Intermediate",
+        "American"
+      ],
+      "stats": {
+        "servings": "8 Servings",
+        "time": "60 Min",
+        "calories": "580 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Crust",
+          "items": [
+            "1 package Oreos (9 ounces)"
+          ]
+        },
+        {
+          "section": "Cake",
+          "items": [
+            "3 packages (8 ounces each) cream cheese, softened",
+            "1/2 cup sugar",
+            "3 eggs",
+            "1 tsp vanilla extract",
+            "1-2/3 cups semi-sweet chocolate chips"
+          ]
+        },
+        {
+          "section": "Topping",
+          "items": [
+            "1/3 cup semi-sweet chocolate chips",
+            "2 tbsp whipping cream"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Crust",
+          "steps": [
+            "Crush Oreos into a thin crust at the bottom of a springform pan."
+          ]
+        },
+        {
+          "section": "Cake",
+          "steps": [
+            "Heat oven to 450°F.",
+            "Beat cream cheese and sugar in a large bowl with a mixer until well blended.",
+            "Add eggs and vanilla; beat well.",
+            "Stir in 1-2/3 cups chocolate chips; pour into crust.",
+            "Bake for 10 minutes.",
+            "Without opening oven door, reduce temperature to 250°F; continue baking for 30 minutes or just until fully set.",
+            "Cool completely."
+          ]
+        },
+        {
+          "section": "Topping",
+          "steps": [
+            "Place remaining 1/3 cup chocolate chips and whipping cream in a small microwave-safe bowl; microwave on high for 20-30 seconds.",
+            "Cool slightly before pouring across the cooled cheesecake.",
+            "Refrigerate for at least 15 minutes before serving."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oven-barbecued-chicken",
+      "title": "Oven Barbecued Chicken",
+      "bgImage": "images/OvenBarbecuedChicken.webp",
+      "aspectRatio": "4/5",
+      "tags": [
+        "Supper",
+        "Main",
+        "Chicken",
+        "Intermediate",
+        "Oven",
+        "American"
+      ],
+      "stats": {
+        "servings": "6 Servings",
+        "time": "75 Min",
+        "calories": "480 Cal/Ser",
+        "difficulty": "Intermediate",
+        "difficultyIcon": "images/Intermediate-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Chicken",
+          "items": [
+            "1/2 cup unsifted flour",
+            "1/2 tsp salt",
+            "3 pounds chicken pieces",
+            "1/4 cup plus 2 tbsp butter, melted and divided"
+          ]
+        },
+        {
+          "section": "Barbecue Sauce",
+          "items": [
+            "1/4 cup chopped onion",
+            "1 clove garlic, finely chopped",
+            "1 cup ketchup",
+            "1/4 cup firmly packed brown sugar",
+            "1/4 cup lemon juice concentrate",
+            "1/4 cup water",
+            "2 tsp Worcestershire sauce"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Chicken",
+          "steps": [
+            "Preheat oven to 350°F.",
+            "In a plastic bag, combine flour and salt.",
+            "Add chicken a few pieces at a time; shake to coat.",
+            "Place in a greased 13x9 baking dish; drizzle with 1/4 cup melted butter.",
+            "Bake uncovered for 30 minutes."
+          ]
+        },
+        {
+          "section": "Barbecue Sauce",
+          "steps": [
+            "Meanwhile, in a small saucepan, cook onion and garlic in remaining 2 tbsp butter.",
+            "Add remaining ingredients; simmer uncovered for 10 minutes.",
+            "Pour sauce over baked chicken.",
+            "Bake combined dish for 30 minutes or until chicken is tender."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-divan",
+      "title": "Chicken Divan",
+      "bgImage": "images/ChickenDivan.webp",
+      "aspectRatio": "4/5",
+      "tags": [
+        "Supper",
+        "Main",
+        "Casserole",
+        "Chicken",
+        "Easy",
+        "Oven",
+        "American"
+      ],
+      "stats": {
+        "servings": "8 Servings",
+        "time": "90 Min",
+        "calories": "520 Cal/Ser",
+        "difficulty": "Easy",
+        "difficultyIcon": "images/Easy-Icon.webp"
+      },
+      "ingredients": [
+        {
+          "section": "Casserole",
+          "items": [
+            "4 whole boneless chicken breasts, cooked and cut",
+            "2 (10 oz) packages chopped broccoli, thawed",
+            "2 cans cream of chicken soup",
+            "1-1/2 cups mayonnaise",
+            "1 cup evaporated milk",
+            "2 tsp lemon juice",
+            "1 tsp curry powder",
+            "1-1/2 cups Velveeta cheese, sliced",
+            "1 cup buttered bread crumbles"
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "section": "Casserole",
+          "steps": [
+            "Blend together soup, mayonnaise, milk, lemon juice, and curry powder.",
+            "Spread broccoli in the bottom of a large baking pan.",
+            "Arrange chicken evenly across broccoli.",
+            "Place cheese slices over chicken.",
+            "Pour sauce over top and sprinkle bread crumbles on sauce.",
+            "Bake at 350° for 1 hour and 15 minutes."
           ]
         }
       ]

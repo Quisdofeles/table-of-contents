@@ -6,7 +6,9 @@ import styles from './RecipeGrid.module.css'
 const MIN_COL_WIDTH = 240
 
 function getColCount(containerWidth) {
-  return Math.max(1, Math.floor(containerWidth / MIN_COL_WIDTH))
+  if (containerWidth <= 300) return 1
+  if (containerWidth <= 600) return 2
+  return Math.max(2, Math.floor(containerWidth / MIN_COL_WIDTH))
 }
 
 const columnVariants = {
